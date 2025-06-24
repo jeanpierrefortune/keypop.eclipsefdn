@@ -387,7 +387,8 @@ orgs.newOrg('iot.keypop', 'eclipse-keypop') {
       local thisRepo = self,
       allow_merge_commit: true,
       allow_update_branch: false,
-      code_scanning_default_languages: [
+      code_scanning_default_languages+: [
+        "actions",
         "python",
       ],
       code_scanning_default_setup_enabled: true,
